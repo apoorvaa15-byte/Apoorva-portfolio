@@ -4,189 +4,217 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Apoorva Akshitha — Content Marketer & Brand Strategist</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --ink: #1a1410;
-    --paper: #faf7f2;
-    --warm: #e8ddd0;
-    --accent: #c4622d;
-    --accent2: #8b4f2a;
-    --muted: #7a6f65;
-    --light: #f0ebe3;
+    --ink: #1a1410; --paper: #faf7f2; --warm: #e8ddd0;
+    --accent: #c4622d; --accent2: #8b4f2a; --muted: #7a6f65; --light: #f0ebe3;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); overflow-x: hidden; }
 
-  /* NAV */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 1.2rem 3rem;
-    background: rgba(250,247,242,0.96);
-    border-bottom: 1px solid var(--warm);
-    backdrop-filter: blur(8px);
-  }
-  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); text-decoration: none; }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { font-size: 0.82rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 3rem; background: rgba(250,247,242,0.97); border-bottom: 1px solid var(--warm); backdrop-filter: blur(8px); }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .nav-links { display: flex; gap: 1.6rem; list-style: none; }
+  .nav-links a { font-size: 0.76rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.2s; }
   .nav-links a:hover { color: var(--accent); }
 
-  /* HERO */
-  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
+  .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 72px; }
   .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 5rem 4rem 5rem 3rem; border-right: 1px solid var(--warm); }
-  .hero-tag { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
-  .hero-name { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 6vw, 5.5rem); font-weight: 900; line-height: 1; margin-bottom: 0.3rem; }
+  .hero-tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.4rem; }
+  .hero-name { font-family: 'Playfair Display', serif; font-size: clamp(3.2rem, 5.5vw, 5rem); font-weight: 900; line-height: 1; margin-bottom: 0.3rem; }
   .hero-name span { color: var(--accent); }
-  .hero-title { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1.1rem, 2vw, 1.5rem); color: var(--muted); margin-bottom: 2.5rem; font-weight: 400; }
-  .hero-bio { font-size: 0.97rem; line-height: 1.8; color: var(--ink); max-width: 480px; margin-bottom: 2.5rem; }
-  .hero-bio p + p { margin-top: 0.8rem; }
-  .hero-cta { display: inline-block; background: var(--accent); color: #fff; padding: 0.9rem 2.2rem; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.2s; }
-  .hero-cta:hover { background: var(--accent2); transform: translateY(-2px); }
-  .hero-right { display: flex; flex-direction: column; justify-content: center; padding: 5rem 3rem 5rem 4rem; background: var(--light); }
-  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-bottom: 3rem; }
-  .stat { border-top: 2px solid var(--accent); padding-top: 1rem; }
-  .stat-num { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--accent); line-height: 1; }
-  .stat-label { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 0.4rem; }
-  .skills-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .skill-chip { background: var(--warm); border: 1px solid #d8cfc5; color: var(--ink); font-size: 0.78rem; font-weight: 500; padding: 0.4rem 0.9rem; letter-spacing: 0.05em; }
+  .hero-title { font-family: 'Playfair Display', serif; font-style: italic; font-size: clamp(1rem, 1.8vw, 1.35rem); color: var(--muted); margin-bottom: 2rem; }
+  .hero-bio { font-size: 0.95rem; line-height: 1.8; color: var(--ink); max-width: 480px; margin-bottom: 2rem; }
+  .hero-bio p+p { margin-top: 0.8rem; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-solid { display: inline-block; background: var(--accent); color: #fff; padding: 0.85rem 2rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.2s; }
+  .btn-solid:hover { background: var(--accent2); transform: translateY(-2px); }
+  .btn-outline { display: inline-block; border: 1.5px solid var(--accent); color: var(--accent); padding: 0.85rem 2rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+  .btn-outline:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
 
-  /* SECTION BASE */
+  .hero-right { display: flex; flex-direction: column; justify-content: center; padding: 4rem 3rem 4rem 4rem; background: var(--light); overflow-y: auto; }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.2rem; }
+  .stat { border-top: 2px solid var(--accent); padding-top: 0.9rem; }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 900; color: var(--accent); line-height: 1; }
+  .stat-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 0.25rem; }
+  .stat-sub { font-size: 0.73rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.5; }
+  .countries-row { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+  .country-tag { display: flex; align-items: center; gap: 0.25rem; background: var(--warm); border: 1px solid #d8cfc5; padding: 0.2rem 0.55rem; font-size: 0.7rem; font-weight: 500; }
+  .tools-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.7rem; margin-top: 1.8rem; }
+  .tools-grid { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+  .tool-chip { display: flex; align-items: center; gap: 0.35rem; background: var(--paper); border: 1px solid var(--warm); padding: 0.3rem 0.7rem; font-size: 0.74rem; font-weight: 500; }
+  .skills-row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.7rem; }
+  .skill-chip { background: var(--warm); border: 1px solid #d8cfc5; font-size: 0.73rem; font-weight: 500; padding: 0.28rem 0.75rem; }
+
   section { padding: 5rem 3rem; }
   .section-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 3rem; }
-  .section-num { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; color: var(--accent); text-transform: uppercase; }
-  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; }
-  .section-line { flex: 1; height: 1px; background: var(--warm); margin-left: auto; }
+  .section-num { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.22em; color: var(--accent); text-transform: uppercase; flex-shrink: 0; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 900; line-height: 1.1; white-space: nowrap; }
+  .section-line { flex: 1; height: 1px; background: var(--warm); }
+
+  /* ABOUT */
+  #about { background: var(--ink); color: var(--paper); }
+  #about .section-title { color: var(--paper); }
+  #about .section-num { color: var(--accent); }
+  #about .section-line { background: #3a3330; }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+  .about-text p { font-size: 1rem; line-height: 1.85; color: #c8bfb5; margin-bottom: 1.2rem; }
+  .about-pillars { display: flex; flex-direction: column; gap: 1.5rem; }
+  .about-pillar { border-left: 3px solid var(--accent); padding-left: 1.2rem; }
+  .about-pillar-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--paper); margin-bottom: 0.3rem; }
+  .about-pillar-desc { font-size: 0.85rem; line-height: 1.7; color: #9a9088; }
 
   /* WEBSITES */
   #websites { background: var(--paper); }
   .websites-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--warm); border: 1.5px solid var(--warm); }
-  .web-card { background: var(--paper); padding: 2.5rem; position: relative; overflow: hidden; transition: background 0.3s; text-decoration: none; color: inherit; display: block; }
-  .web-card::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transition: transform 0.3s; transform-origin: left; }
+  .web-card { background: var(--paper); position: relative; overflow: hidden; transition: background 0.3s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+  .web-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transition: transform 0.3s; transform-origin: left; }
   .web-card:hover { background: var(--light); }
-  .web-card:hover::before { transform: scaleX(1); }
-  .web-brand { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; }
-  .web-name { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 0.8rem; }
-  .web-desc { font-size: 0.88rem; line-height: 1.7; color: var(--muted); }
-  .web-arrow { display: inline-block; margin-top: 1.2rem; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+  .web-card:hover::after { transform: scaleX(1); }
+
+  /* Website screenshot thumbnails */
+  .web-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; position: relative; background: var(--light); border-bottom: 1px solid var(--warm); }
+  .web-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform 0.4s; }
+  .web-card:hover .web-thumb img { transform: scale(1.03); }
+
+  /* Logo strip */
+  .web-logo-strip { height: 60px; display: flex; align-items: center; justify-content: flex-start; padding: 0 1.8rem; background: #fff; border-bottom: 1px solid var(--warm); gap: 0.8rem; }
+  .web-logo-strip img { max-height: 32px; max-width: 130px; object-fit: contain; }
+  .web-logo-svg { height: 32px; display: flex; align-items: center; }
+
+  .web-body { padding: 1.6rem 2rem 2.2rem; flex: 1; }
+  .web-brand { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.45rem; }
+  .web-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; }
+  .web-desc { font-size: 0.85rem; line-height: 1.7; color: var(--muted); }
+  .web-arrow { display: inline-block; margin-top: 0.9rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
 
   /* ARTICLES */
   #articles { background: var(--light); }
   .articles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-  .article-card { text-decoration: none; color: inherit; display: flex; flex-direction: column; border: 1px solid var(--warm); background: var(--paper); transition: transform 0.25s, box-shadow 0.25s; }
-  .article-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-  .article-thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: var(--warm); }
-  .article-thumb-placeholder { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--warm) 0%, #d4c9bb 100%); display: flex; align-items: center; justify-content: center; }
-  .article-thumb-placeholder span { font-size: 2.5rem; }
-  .article-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
-  .article-pub { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
-  .article-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.6rem; }
-  .article-desc { font-size: 0.83rem; line-height: 1.7; color: var(--muted); flex: 1; }
-  .article-link { display: inline-block; margin-top: 1rem; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
+  .article-card { text-decoration: none; color: inherit; display: flex; flex-direction: column; border: 1px solid var(--warm); background: var(--paper); transition: transform 0.25s, box-shadow 0.25s; overflow: hidden; }
+  .article-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); }
+  .article-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; background: var(--warm); position: relative; }
+  .article-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+  .article-card:hover .article-thumb img { transform: scale(1.05); }
+  .article-thumb-ph { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.4rem; }
+  .article-thumb-ph-icon { font-size: 2.2rem; }
+  .article-thumb-ph-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); opacity: 0.75; }
+  .article-body { padding: 1.4rem; flex: 1; display: flex; flex-direction: column; }
+  .article-pub { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.45rem; }
+  .article-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.45rem; }
+  .article-desc { font-size: 0.82rem; line-height: 1.7; color: var(--muted); flex: 1; }
+  .article-link { display: inline-block; margin-top: 0.85rem; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
 
-  /* SOCIAL MEDIA */
+  /* SOCIAL */
   #social { background: var(--paper); }
-  .social-intro { font-size: 0.97rem; line-height: 1.8; color: var(--muted); max-width: 600px; margin-bottom: 2.5rem; }
-  .social-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
-  .social-card { border: 1px solid var(--warm); background: var(--paper); text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.25s, box-shadow 0.25s; }
-  .social-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-  .social-preview { position: relative; width: 100%; aspect-ratio: 1/1; background: var(--light); overflow: hidden; }
-  .social-preview-img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .social-preview-overlay { position: absolute; inset: 0; background: rgba(26,20,16,0.35); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.2s; }
-  .social-card:hover .social-preview-overlay { opacity: 1; }
-  .social-preview-overlay span { color: #fff; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.7); padding: 0.5rem 1.2rem; }
-  /* Instagram placeholder for cards we can't embed */
-  .insta-placeholder { width: 100%; aspect-ratio: 1/1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; background: linear-gradient(135deg, #f9c74f 0%, #f8961e 30%, #f3722c 50%, #e76f51 70%, #c1121f 100%); }
-  .insta-icon { font-size: 2.8rem; }
-  .insta-label { color: #fff; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.9; }
-  .social-body { padding: 1.2rem 1.4rem; }
-  .social-type { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
-  .social-label-text { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; line-height: 1.4; margin-bottom: 0.4rem; }
-  .social-desc { font-size: 0.82rem; line-height: 1.65; color: var(--muted); }
+  .social-intro { font-size: 0.95rem; line-height: 1.8; color: var(--muted); max-width: 620px; margin-bottom: 2.5rem; }
+  .social-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.4rem; }
+  .social-card { border: 1px solid var(--warm); background: var(--paper); text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.25s, box-shadow 0.25s; overflow: hidden; }
+  .social-card:hover { transform: translateY(-5px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); }
+  .social-thumb { width: 100%; aspect-ratio: 1/1; overflow: hidden; position: relative; }
+  .social-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+  .social-card:hover .social-thumb img { transform: scale(1.04); }
+  .social-overlay { position: absolute; inset: 0; background: rgba(26,20,16,0); display: flex; align-items: center; justify-content: center; transition: background 0.25s; }
+  .social-card:hover .social-overlay { background: rgba(26,20,16,0.28); }
+  .social-overlay span { color: #fff; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; border: 1.5px solid rgba(255,255,255,0.85); padding: 0.42rem 1rem; opacity: 0; transition: opacity 0.25s; }
+  .social-card:hover .social-overlay span { opacity: 1; }
+  .insta-ph { width: 100%; aspect-ratio: 1/1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; }
+  .insta-ph-icon { font-size: 2.6rem; }
+  .insta-ph-label { color: #fff; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+  .social-body { padding: 1rem 1.2rem 1.3rem; }
+  .social-type { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.35rem; }
+  .social-label { font-family: 'Playfair Display', serif; font-size: 0.92rem; font-weight: 700; line-height: 1.35; margin-bottom: 0.35rem; }
+  .social-desc { font-size: 0.79rem; line-height: 1.65; color: var(--muted); }
 
   /* EVENTS */
   #events { background: var(--ink); color: var(--paper); }
   #events .section-title { color: var(--paper); }
   #events .section-num { color: var(--accent); }
   #events .section-line { background: #3a3330; }
-  .events-intro { font-size: 0.97rem; line-height: 1.8; color: #b0a89e; max-width: 620px; margin-bottom: 3rem; }
-  .events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #2e2a27; border: 1px solid #2e2a27; margin-bottom: 2rem; }
-  .event-card { background: #221e1b; padding: 2.5rem; text-decoration: none; color: inherit; display: block; transition: background 0.2s; }
-  .event-card:hover { background: #2a2520; }
-  .event-location { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem; }
-  .event-name { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--paper); margin-bottom: 0.6rem; }
-  .event-desc { font-size: 0.85rem; line-height: 1.7; color: #9a9088; }
-  .events-social { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .event-social-card { background: #221e1b; border: 1px solid #2e2a27; padding: 1.8rem; text-decoration: none; color: inherit; display: block; transition: border-color 0.2s; }
-  .event-social-card:hover { border-color: var(--accent); }
-  .event-social-label { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--paper); margin-bottom: 0.4rem; }
-  .event-social-desc { font-size: 0.83rem; line-height: 1.6; color: #9a9088; }
+  .events-intro { font-size: 0.95rem; line-height: 1.8; color: #b0a89e; max-width: 620px; margin-bottom: 3rem; }
+  .events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-bottom: 1.4rem; }
+  .event-card { background: #221e1b; text-decoration: none; color: inherit; display: flex; flex-direction: column; overflow: hidden; transition: transform 0.25s, box-shadow 0.25s; }
+  .event-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.5); }
+  .event-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; position: relative; }
+  .event-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; filter: brightness(0.8); }
+  .event-card:hover .event-thumb img { transform: scale(1.04); filter: brightness(1); }
+  .event-thumb-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+  .event-body { padding: 1.4rem 1.7rem 1.8rem; flex: 1; }
+  .event-location { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+  .event-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--paper); margin-bottom: 0.45rem; }
+  .event-desc { font-size: 0.82rem; line-height: 1.7; color: #9a9088; }
+  .events-social { display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem; }
+  .event-s-card { background: #221e1b; border: 1px solid #2e2a27; text-decoration: none; color: inherit; display: flex; flex-direction: column; overflow: hidden; transition: border-color 0.2s, transform 0.2s; }
+  .event-s-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .event-s-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; }
+  .event-s-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; filter: brightness(0.75); transition: filter 0.2s; }
+  .event-s-card:hover .event-s-thumb img { filter: brightness(0.95); }
+  .event-s-thumb-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+  .event-s-body { padding: 1.1rem 1.4rem 1.4rem; }
+  .event-s-label { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--paper); margin-bottom: 0.3rem; }
+  .event-s-desc { font-size: 0.79rem; line-height: 1.6; color: #9a9088; }
 
   /* PODCAST */
   #podcast { background: var(--accent); color: #fff; }
   #podcast .section-title { color: #fff; }
   #podcast .section-num { color: rgba(255,255,255,0.6); }
   #podcast .section-line { background: rgba(255,255,255,0.2); }
-  .podcast-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
-  .podcast-desc { font-size: 1rem; line-height: 1.8; color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; }
-  .podcast-desc p + p { margin-top: 0.8rem; }
-  .podcast-roles { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 2rem; }
-  .podcast-role { display: flex; align-items: center; gap: 0.8rem; font-size: 0.88rem; font-weight: 500; color: rgba(255,255,255,0.9); }
+  .podcast-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .podcast-desc { font-size: 0.97rem; line-height: 1.8; color: rgba(255,255,255,0.88); margin-bottom: 1.4rem; }
+  .podcast-desc p+p { margin-top: 0.8rem; }
+  .podcast-roles { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2rem; }
+  .podcast-role { display: flex; align-items: center; gap: 0.7rem; font-size: 0.86rem; font-weight: 500; color: rgba(255,255,255,0.9); }
   .podcast-role::before { content: '▸'; color: rgba(255,255,255,0.5); font-size: 0.7rem; }
-  .podcast-link { display: inline-block; background: #fff; color: var(--accent); padding: 0.9rem 2.2rem; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: opacity 0.2s, transform 0.2s; }
-  .podcast-link:hover { opacity: 0.9; transform: translateY(-2px); }
-  .podcast-visual { display: flex; flex-direction: column; align-items: center; justify-content: center; }
-  .podcast-yt-thumb { position: relative; width: 100%; border-radius: 4px; overflow: hidden; cursor: pointer; }
-  .podcast-yt-thumb img { width: 100%; display: block; }
-  .podcast-play-btn { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3); transition: background 0.2s; }
-  .podcast-yt-thumb:hover .podcast-play-btn { background: rgba(0,0,0,0.5); }
-  .podcast-play-btn svg { width: 64px; height: 64px; fill: #fff; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4)); }
+  .podcast-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-white { display: inline-block; background: #fff; color: var(--accent); padding: 0.85rem 1.8rem; font-size: 0.76rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: opacity 0.2s, transform 0.2s; }
+  .btn-white:hover { opacity: 0.9; transform: translateY(-2px); }
+  .btn-white-outline { display: inline-block; border: 1.5px solid rgba(255,255,255,0.7); color: #fff; padding: 0.85rem 1.8rem; font-size: 0.76rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: all 0.2s; }
+  .btn-white-outline:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+  .podcast-visual { display: flex; flex-direction: column; gap: 1rem; }
+  .yt-thumb { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; cursor: pointer; display: block; background: linear-gradient(135deg, #8b4f2a, #6b3d20); border-radius: 4px; }
+  .yt-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .yt-fallback { position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; background: linear-gradient(135deg, #8b4f2a, #6b3d20); }
+  .yt-fallback-icon { font-size: 2.4rem; }
+  .yt-fallback-label { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: #fff; }
+  .yt-fallback-sub { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
+  .yt-play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.22); transition: background 0.2s; }
+  .yt-thumb:hover .yt-play { background: rgba(0,0,0,0.42); }
+  .yt-play svg { width: 58px; height: 58px; fill: #fff; filter: drop-shadow(0 2px 10px rgba(0,0,0,0.5)); }
 
-  /* FOOTER */
   footer { background: var(--ink); color: var(--paper); padding: 4rem 3rem; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; }
-  .footer-name { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; margin-bottom: 0.5rem; }
-  .footer-desc { font-size: 0.88rem; color: #9a9088; line-height: 1.6; }
-  .footer-contact { text-align: right; }
-  .footer-email { font-size: 1rem; color: var(--accent); text-decoration: none; display: block; margin-bottom: 0.5rem; }
-  .footer-phone { font-size: 0.88rem; color: #9a9088; }
-  .footer-bottom { background: #111; padding: 1rem 3rem; display: flex; justify-content: space-between; align-items: center; }
-  .footer-bottom-text { font-size: 0.75rem; color: #5a5250; letter-spacing: 0.05em; }
+  .footer-name { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 900; margin-bottom: 0.4rem; }
+  .footer-desc { font-size: 0.85rem; color: #9a9088; line-height: 1.6; }
+  .footer-right { text-align: right; }
+  .footer-email { font-size: 0.95rem; color: var(--accent); text-decoration: none; display: block; margin-bottom: 0.4rem; }
+  .footer-phone { font-size: 0.85rem; color: #9a9088; }
+  .footer-bottom { background: #111; padding: 0.9rem 3rem; display: flex; justify-content: space-between; }
+  .footer-bottom span { font-size: 0.72rem; color: #5a5250; letter-spacing: 0.05em; }
 
-  /* ANIMATIONS */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   .hero-tag { animation: fadeUp 0.7s ease both 0.1s; }
   .hero-name { animation: fadeUp 0.7s ease both 0.2s; }
   .hero-title { animation: fadeUp 0.7s ease both 0.3s; }
   .hero-bio { animation: fadeUp 0.7s ease both 0.4s; }
-  .hero-cta { animation: fadeUp 0.7s ease both 0.5s; }
+  .hero-actions { animation: fadeUp 0.7s ease both 0.5s; }
 
-  @media (max-width: 1000px) {
-    .articles-grid { grid-template-columns: 1fr 1fr; }
-  }
+  @media (max-width: 1024px) { .articles-grid { grid-template-columns: 1fr 1fr; } .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } }
   @media (max-width: 768px) {
-    nav { padding: 1rem 1.5rem; }
-    .nav-links { gap: 1rem; }
-    .hero { grid-template-columns: 1fr; }
-    .hero-left { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid var(--warm); }
-    .hero-right { padding: 2rem 1.5rem; }
-    .websites-grid, .events-grid { grid-template-columns: 1fr; }
-    .events-social { grid-template-columns: 1fr; }
-    .podcast-layout { grid-template-columns: 1fr; }
-    .articles-grid { grid-template-columns: 1fr; }
-    .social-grid { grid-template-columns: 1fr; }
-    section { padding: 3rem 1.5rem; }
-    footer { grid-template-columns: 1fr; }
-    .footer-contact { text-align: left; }
+    nav { padding: 1rem 1.5rem; } .nav-links { gap: 0.8rem; } .nav-links a { font-size: 0.7rem; }
+    .hero { grid-template-columns: 1fr; } .hero-left { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid var(--warm); } .hero-right { padding: 2rem 1.5rem; }
+    .websites-grid { grid-template-columns: 1fr; } .events-grid { grid-template-columns: 1fr; } .events-social { grid-template-columns: 1fr; }
+    .podcast-layout { grid-template-columns: 1fr; } .articles-grid { grid-template-columns: 1fr; } .social-grid { grid-template-columns: 1fr 1fr; }
+    section { padding: 3rem 1.5rem; } footer { grid-template-columns: 1fr; } .footer-right { text-align: left; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">Apoorva Akshitha</a>
   <ul class="nav-links">
+    <li><a href="#about">About</a></li>
     <li><a href="#websites">Websites</a></li>
     <li><a href="#articles">Articles</a></li>
     <li><a href="#social">Social</a></li>
@@ -200,30 +228,94 @@
   <div class="hero-left">
     <p class="hero-tag">Content Marketer · Brand Strategist</p>
     <h1 class="hero-name">Apoorva<br><span>Akshitha</span></h1>
-    <p class="hero-title">6+ Years Shaping Brand Voices That Stick</p>
+    <p class="hero-title">5+ Years Shaping Brand Voices That Stick</p>
     <div class="hero-bio">
       <p>I turn complex ideas into content that moves people — from SaaS product narratives to real estate investment blogs, from podcast concepts to global event campaigns.</p>
       <p>Across B2B SaaS, hospitality, FMCG, and real estate, I've built brand voices from scratch, led editorial teams, and driven a 28% year-over-year lift in readership through targeted SEO and strategic storytelling.</p>
-      <p>What sets me apart isn't just the writing — it's the strategy behind it, the data informing it, and the consistency sustaining it.</p>
     </div>
-    
   </div>
   <div class="hero-right">
     <div class="stats-grid">
-      <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Years of Experience</div></div>
-      <div class="stat"><div class="stat-num">28%</div><div class="stat-label">YOY Readership Growth</div></div>
-      <div class="stat"><div class="stat-num">4</div><div class="stat-label">Industries Covered</div></div>
-      <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Continents of Impact</div></div>
+      <div class="stat">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Years of Experience</div>
+        <div class="stat-sub">B2B SaaS · Real Estate<br>Hospitality · FMCG</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">28%</div>
+        <div class="stat-label">YOY Readership Growth</div>
+        <div class="stat-sub">Via targeted SEO strategy<br>& content optimisation</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Industries Covered</div>
+        <div class="stat-sub">SaaS · Real Estate<br>Hospitality · FMCG</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label" style="margin-bottom:0.5rem;">Countries Worked For</div>
+        <div class="countries-row">
+          <span class="country-tag">🇮🇳 India</span>
+          <span class="country-tag">🇺🇸 USA</span>
+          <span class="country-tag">🇸🇬 Singapore</span>
+          <span class="country-tag">🇦🇺 Australia</span>
+          <span class="country-tag">🇳🇿 New Zealand</span>
+          <span class="country-tag">🇬🇧 UK</span>
+          <span class="country-tag">🇳🇱 Netherlands</span>
+        </div>
+      </div>
     </div>
+    <div class="tools-label">Tools & Platforms</div>
+    <div class="tools-grid">
+      <span class="tool-chip">🎯 HubSpot</span><span class="tool-chip">🎨 Canva</span>
+      <span class="tool-chip">📧 Mailchimp</span><span class="tool-chip">🌐 Drupal</span>
+      <span class="tool-chip">📊 LeadSquared</span><span class="tool-chip">🎙️ Buzzsprout</span>
+      <span class="tool-chip">✨ Adobe Exp.</span><span class="tool-chip">💬 Wati</span>
+      <span class="tool-chip">🔄 MarketO</span><span class="tool-chip">📋 MS Office</span>
+      <span class="tool-chip">🖥️ Keynote</span><span class="tool-chip">🤝 Engage</span>
+    </div>
+    <div class="tools-label">Core Skills</div>
     <div class="skills-row">
-      <span class="skill-chip">Content Strategy</span>
-      <span class="skill-chip">SEO</span>
-      <span class="skill-chip">Brand Storytelling</span>
-      <span class="skill-chip">Campaign Management</span>
-      <span class="skill-chip">Podcast Production</span>
-      <span class="skill-chip">Events & Webinars</span>
-      <span class="skill-chip">Influencer Marketing</span>
-      <span class="skill-chip">UX Copy</span>
+      <span class="skill-chip">Content Strategy</span><span class="skill-chip">SEO & Web Content</span>
+      <span class="skill-chip">Brand Storytelling</span><span class="skill-chip">Editorial Leadership</span>
+      <span class="skill-chip">Campaign Management</span><span class="skill-chip">Podcast Production</span>
+      <span class="skill-chip">Events & Webinars</span><span class="skill-chip">Influencer Marketing</span>
+      <span class="skill-chip">UX Copywriting</span><span class="skill-chip">PR & Communications</span>
+      <span class="skill-chip">Data Analytics</span><span class="skill-chip">EDM Campaigns</span>
+      <span class="skill-chip">AEM Migration</span><span class="skill-chip">Social Media Strategy</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">00</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm Apoorva — a content marketer and brand strategist based in Hyderabad, with a natural instinct for language and an obsession with making things make sense. I've spent the better part of five years figuring out what makes people stop scrolling, actually read, and then act — and building systems that do that consistently.</p>
+      <p>My career has taken me across industries and borders, working on campaigns for audiences in India, the US, Singapore, Australia, New Zealand, and the UK. Each context taught me something: how to simplify the complex, how to speak to a niche without alienating the broader audience, and how to build a brand voice that doesn't sound like everyone else's.</p>
+      <p>Outside the brief, I'm genuinely curious — about people, markets, communication, and the ideas that tend to outlast trends. That curiosity is what I bring to every project: not just the ability to write, but the instinct to ask the right questions first.</p>
+    </div>
+    <div class="about-pillars">
+      <div class="about-pillar">
+        <div class="about-pillar-title">Strategy Before Words</div>
+        <div class="about-pillar-desc">Every piece I create is backed by a clear brief, audience insight, and a defined goal. The writing comes after the thinking.</div>
+      </div>
+      <div class="about-pillar">
+        <div class="about-pillar-title">Fluent Across Formats</div>
+        <div class="about-pillar-desc">From long-form blogs and eBooks to UX copy, podcast scripts, EDMs, and social reels — I've worked across the full content spectrum.</div>
+      </div>
+      <div class="about-pillar">
+        <div class="about-pillar-title">Built for B2B, Wired for Storytelling</div>
+        <div class="about-pillar-desc">My strongest suits are B2B SaaS and investment content — where the challenge is making dry, complex topics genuinely compelling.</div>
+      </div>
+      <div class="about-pillar">
+        <div class="about-pillar-title">Data Keeps Me Honest</div>
+        <div class="about-pillar-desc">I use analytics to validate decisions and iterate — not just to report numbers, but to understand what they mean for the next move.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -236,24 +328,80 @@
     <div class="section-line"></div>
   </div>
   <div class="websites-grid">
+
+    <!-- NEEYAMO -->
     <a class="web-card" href="https://www.neeyamo.com" target="_blank">
-      <div class="web-brand">SaaS · HR Tech</div>
-      <div class="web-name">Neeyamo</div>
-      <div class="web-desc">Led end-to-end content for this global HR SaaS platform — editorial calendar, eBooks, blogs, case studies, video scripts, and press releases. Managed global event coordination and applied SEO across new and existing content.</div>
-      <span class="web-arrow">Visit Site ↗</span>
+      <div class="web-thumb">
+        <img src="https://www.neeyamo.com/themes/custom/neeyamo/share-image.png"
+             referrerpolicy="no-referrer" crossorigin="anonymous"
+             alt="Neeyamo website"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#0a2540,#1a4a7a)';this.style.display='none';this.parentElement.innerHTML+='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5\'>neeyamo.com</div>'"/>
+      </div>
+      <div class="web-logo-strip">
+        <!-- Inline SVG Neeyamo wordmark -->
+        <svg viewBox="0 0 140 32" height="28" xmlns="http://www.w3.org/2000/svg" aria-label="Neeyamo">
+          <text x="0" y="24" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#0a2540">Neeyamo</text>
+        </svg>
+      </div>
+      <div class="web-body">
+        <div class="web-brand">SaaS · HR Tech · Global</div>
+        <div class="web-name">Neeyamo</div>
+        <div class="web-desc">Led end-to-end content for this global HR SaaS platform — editorial calendar, eBooks, blogs, case studies, video scripts, and press releases. Managed global event coordination and SEO across new and existing content.</div>
+        <span class="web-arrow">Visit Site ↗</span>
+      </div>
     </a>
+
+    <!-- ASHTON GRAY -->
     <a class="web-card" href="https://ashtongray.in" target="_blank">
-      <div class="web-brand">Real Estate · U.S.</div>
-      <div class="web-name">Ashton Gray</div>
-      <div class="web-desc">Sole content and brand strategist for Ashton Gray Investments — crafted the website, sales decks, podcast, and social campaigns. Also led Grayvolve, their flagship product launch event, from concept to execution.</div>
-      <span class="web-arrow">Visit Site ↗</span>
+      <div class="web-thumb">
+        <img src="https://ashtongray.in/wp-content/uploads/2024/05/backdrop_ashton_graynnect.webp"
+             referrerpolicy="no-referrer" crossorigin="anonymous"
+             alt="Ashton Gray website"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#1a1410,#3d2b1a)';this.style.display='none';this.parentElement.innerHTML+='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#c4622d;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.7\'>ashtongray.in</div>'"/>
+      </div>
+      <div class="web-logo-strip">
+        <img src="https://ashtongray.in/wp-content/uploads/2023/11/AG-new-logo1-dark.png"
+             referrerpolicy="no-referrer" crossorigin="anonymous"
+             alt="Ashton Gray logo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <!-- Fallback wordmark -->
+        <svg viewBox="0 0 160 32" height="28" style="display:none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="24" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#1a1410">Ashton Gray</text>
+        </svg>
+      </div>
+      <div class="web-body">
+        <div class="web-brand">Real Estate · U.S. Investments</div>
+        <div class="web-name">Ashton Gray</div>
+        <div class="web-desc">Sole content and brand strategist for Ashton Gray Investments — crafted the full website, sales decks, podcast series, and social campaigns. Led Grayvolve, their flagship product launch event, end-to-end.</div>
+        <span class="web-arrow">Visit Site ↗</span>
+      </div>
     </a>
+
+    <!-- KAROMI -->
     <a class="web-card" href="http://www.karomi.com" target="_blank">
-      <div class="web-brand">SaaS · MarTech</div>
-      <div class="web-name">Karomi Technologies</div>
-      <div class="web-desc">Co-drafted website content for SaaS product MAOne. Developed social media strategy and ad content for inorganic campaigns, and analyzed ad performance to present actionable effectiveness findings.</div>
-      <span class="web-arrow">Visit Site ↗</span>
+      <div class="web-thumb">
+        <img src="http://www.karomi.com/img/logo%20(1)%203.png"
+             referrerpolicy="no-referrer" crossorigin="anonymous"
+             alt="Karomi website"
+             onerror="this.parentElement.style.background='linear-gradient(135deg,#1e3a2f,#2d5c47)';this.style.display='none';this.parentElement.innerHTML+='<div style=\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5\'>karomi.com</div>'"/>
+      </div>
+      <div class="web-logo-strip">
+        <img src="http://www.karomi.com/img/logo%20(1)%203.png"
+             referrerpolicy="no-referrer" crossorigin="anonymous"
+             alt="Karomi logo"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <svg viewBox="0 0 110 32" height="28" style="display:none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="24" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#1e3a2f">Karomi</text>
+        </svg>
+      </div>
+      <div class="web-body">
+        <div class="web-brand">SaaS · MarTech · Packaging</div>
+        <div class="web-name">Karomi Technologies</div>
+        <div class="web-desc">Co-drafted website content for SaaS product MAOne. Developed social media strategy and ad content for inorganic campaigns, and analysed ad performance to present actionable effectiveness findings.</div>
+        <span class="web-arrow">Visit Site ↗</span>
+      </div>
     </a>
+
   </div>
 </section>
 
@@ -265,143 +413,153 @@
     <div class="section-line"></div>
   </div>
   <div class="articles-grid">
-
     <a class="article-card" href="https://ashtongray.in/blog/its-time-for-your-money-to-hit-the-gym/" target="_blank">
-      <img class="article-thumb" src="https://ashtongray.in/wp-content/uploads/2023/04/Its-time-for-your-money-to-hit-the-gym.webp" alt="Money & Fitness" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="article-thumb-placeholder" style="display:none"><span>💪</span></div>
+      <div class="article-thumb">
+        <img src="https://ashtongray.in/wp-content/uploads/2023/04/Its-time-for-your-money-to-hit-the-gym.webp" referrerpolicy="no-referrer" loading="lazy" alt="Money Gym" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="article-thumb-ph" style="display:none;background:linear-gradient(135deg,#f0ebe3,#e8ddd0)"><span class="article-thumb-ph-icon">💪</span><span class="article-thumb-ph-label">Ashton Gray</span></div>
+      </div>
       <div class="article-body">
         <div class="article-pub">Ashton Gray · Real Estate</div>
         <div class="article-title">It's Time for Your Money to Hit the Gym</div>
-        <div class="article-desc">A punchy take on investing mindset — using fitness as a creative metaphor to talk about wealth-building, discipline, and compounding returns for real estate investors.</div>
+        <div class="article-desc">A punchy take on investing mindset — using fitness as a creative metaphor for wealth-building, discipline, and compounding returns.</div>
         <span class="article-link">Read Article ↗</span>
       </div>
     </a>
-
     <a class="article-card" href="https://ashtongray.in/blog/lrs-vs-odi-key-differences-and-implications-of-new-tcs-rate/" target="_blank">
-      <img class="article-thumb" src="https://ashtongray.in/wp-content/uploads/2023/05/New-Project-2024-03-15T183312.841-1.webp" alt="LRS vs ODI" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="article-thumb-placeholder" style="display:none"><span>📊</span></div>
+      <div class="article-thumb">
+        <img src="https://ashtongray.in/wp-content/uploads/2023/05/New-Project-2024-03-15T183312.841-1.webp" referrerpolicy="no-referrer" loading="lazy" alt="LRS vs ODI" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="article-thumb-ph" style="display:none;background:linear-gradient(135deg,#e8f4f8,#d0e8f0)"><span class="article-thumb-ph-icon">📊</span><span class="article-thumb-ph-label">Ashton Gray</span></div>
+      </div>
       <div class="article-body">
         <div class="article-pub">Ashton Gray · Finance</div>
-        <div class="article-title">LRS vs ODI: Key Differences and Implications of New TCS Rate</div>
-        <div class="article-desc">A research-driven explainer simplifying complex tax regulations for NRI investors — breaking down LRS versus ODI routes and what the updated TCS rates mean in practice.</div>
+        <div class="article-title">LRS vs ODI: Key Differences and New TCS Rate Implications</div>
+        <div class="article-desc">Research-driven explainer simplifying complex tax regulations for NRI investors — breaking down routes and TCS implications clearly.</div>
         <span class="article-link">Read Article ↗</span>
       </div>
     </a>
-
     <a class="article-card" href="https://ashtongray.in/blog/investing-in-real-estate-playing-the-chess-of-wealth/" target="_blank">
-      <img class="article-thumb" src="https://ashtongray.in/wp-content/uploads/2023/07/Investing-in-Real-Estate.webp" alt="Chess of Wealth" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="article-thumb-placeholder" style="display:none"><span>♟️</span></div>
+      <div class="article-thumb">
+        <img src="https://ashtongray.in/wp-content/uploads/2023/07/Investing-in-Real-Estate.webp" referrerpolicy="no-referrer" loading="lazy" alt="Chess of Wealth" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="article-thumb-ph" style="display:none;background:linear-gradient(135deg,#1a1410,#3d2b1a)"><span class="article-thumb-ph-icon">♟️</span><span class="article-thumb-ph-label" style="color:#d4c9bb">Ashton Gray</span></div>
+      </div>
       <div class="article-body">
         <div class="article-pub">Ashton Gray · Strategy</div>
         <div class="article-title">Investing in Real Estate: Playing the Chess of Wealth</div>
-        <div class="article-desc">An analogy-rich long-read framing real estate investment as a strategic chess game — positioning Ashton Gray as a thought-leader for serious wealth builders.</div>
+        <div class="article-desc">An analogy-rich long-read framing real estate investment as a strategic chess game — positioning the brand as a thought-leader for wealth builders.</div>
         <span class="article-link">Read Article ↗</span>
       </div>
     </a>
-
     <a class="article-card" href="https://selionglobal.com/insights/from-corner-office-to-boardroom-contrasting-responsibilities-ceo-s-transition-to-directorship" target="_blank">
-      <img class="article-thumb" src="https://selionglobal.com/media/pages/aa-insights/from-corner-office-to-boardroom-contrasting-responsibilities-ceo-s-transition-to-directorship/c5b732725e-1774601547/slg-ceo-to-boardroom-cover-image-1.jpg" alt="CEO to Boardroom" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="article-thumb-placeholder" style="display:none"><span>🏛️</span></div>
+      <div class="article-thumb">
+        <img src="https://selionglobal.com/media/pages/aa-insights/from-corner-office-to-boardroom-contrasting-responsibilities-ceo-s-transition-to-directorship/c5b732725e-1774601547/slg-ceo-to-boardroom-cover-image-1.jpg" referrerpolicy="no-referrer" loading="lazy" alt="CEO to Boardroom" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="article-thumb-ph" style="display:none;background:linear-gradient(135deg,#1a2540,#2a3d6a)"><span class="article-thumb-ph-icon">🏛️</span><span class="article-thumb-ph-label" style="color:#c8d4e8">Selion Global</span></div>
+      </div>
       <div class="article-body">
         <div class="article-pub">Selion Global · Leadership</div>
         <div class="article-title">From Corner Office to Boardroom: CEO's Transition to Directorship</div>
-        <div class="article-desc">A nuanced leadership piece examining the identity and responsibility shift executives face when moving from operational CEO roles to board-level governance positions.</div>
+        <div class="article-desc">A nuanced leadership piece on the identity and responsibility shift when executives move from operational CEO roles to board governance.</div>
         <span class="article-link">Read Article ↗</span>
       </div>
     </a>
-
     <a class="article-card" href="https://selionglobal.com/insights/imagine-today-s-thinking-for-the-future-of-tomorrow" target="_blank">
-      <img class="article-thumb" src="https://selionglobal.com/media/pages/aa-insights/imagine-today-s-thinking-for-the-future-of-tomorrow/46a69b5188-1774601547/prof-dr-peter-verhezen-interview.jpg" alt="Future of Tomorrow" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="article-thumb-placeholder" style="display:none"><span>🔮</span></div>
+      <div class="article-thumb">
+        <img src="https://selionglobal.com/media/pages/aa-insights/imagine-today-s-thinking-for-the-future-of-tomorrow/46a69b5188-1774601547/prof-dr-peter-verhezen-interview.jpg" referrerpolicy="no-referrer" loading="lazy" alt="Future Thinking" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="article-thumb-ph" style="display:none;background:linear-gradient(135deg,#1a1a2e,#16213e)"><span class="article-thumb-ph-icon">🔮</span><span class="article-thumb-ph-label" style="color:#c8c8d8">Selion Global</span></div>
+      </div>
       <div class="article-body">
         <div class="article-pub">Selion Global · Thought Leadership</div>
         <div class="article-title">Imagine Today's Thinking for the Future of Tomorrow</div>
-        <div class="article-desc">A forward-looking piece featuring Prof. Dr Peter Verhezen — exploring how strategy, sustainability and AI are reshaping leadership for the decades ahead.</div>
+        <div class="article-desc">A forward-looking piece on future-forward corporate strategy and why organisations need to build adaptability into their DNA today.</div>
         <span class="article-link">Read Article ↗</span>
       </div>
     </a>
-
     <a class="article-card" href="https://selionglobal.com/insights/japan-s-new-era-with-global-talent-and-local-investment-reshaping-start-ups" target="_blank">
-      <img class="article-thumb" src="https://selionglobal.com/media/pages/aa-insights/japan-s-new-era-with-global-talent-and-local-investment-reshaping-start-ups/0489f8b355-1774601547/selion-global-japan-global-talent.jpg" alt="Japan Innovation" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <div class="article-thumb-placeholder" style="display:none"><span>🗾</span></div>
+      <div class="article-thumb">
+        <img src="https://selionglobal.com/media/pages/aa-insights/japan-s-new-era-with-global-talent-and-local-investment-reshaping-start-ups/0489f8b355-1774601547/selion-global-japan-global-talent.jpg" referrerpolicy="no-referrer" loading="lazy" alt="Japan Innovation" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="article-thumb-ph" style="display:none;background:linear-gradient(135deg,#bc0029,#d4002e)"><span class="article-thumb-ph-icon">🗾</span><span class="article-thumb-ph-label" style="color:#ffe0e0">Selion Global</span></div>
+      </div>
       <div class="article-body">
         <div class="article-pub">Selion Global · Economy</div>
         <div class="article-title">Japan's New Era with Global Talent and Local Investment</div>
-        <div class="article-desc">An in-depth look at Japan's evolving start-up landscape — exploring how global talent mobility and domestic investment are reshaping entrepreneurship in Asia's most dynamic economy.</div>
+        <div class="article-desc">An in-depth look at Japan's evolving start-up landscape and how global talent mobility is reshaping entrepreneurship across Asia.</div>
         <span class="article-link">Read Article ↗</span>
       </div>
     </a>
-
   </div>
 </section>
 
-<!-- SOCIAL MEDIA -->
+<!-- SOCIAL -->
 <section id="social">
   <div class="section-header">
     <span class="section-num">03</span>
     <h2 class="section-title">Social Media</h2>
     <div class="section-line"></div>
   </div>
-  <p class="social-intro">From influencer scouting and scripting to conceptualizing campaigns and driving engagement — here's a snapshot of social content I've ideated, written, and managed across Instagram.</p>
+  <p class="social-intro">From influencer scouting and scripting to conceptualising campaigns and driving engagement — social content ideated, written, and managed across Instagram.</p>
   <div class="social-grid">
 
-    <a class="social-card" href="https://www.instagram.com/p/C3HxH_qPhT0/?igsh=ZXBsaXR6M3d1NDFq" target="_blank">
-      <div class="insta-placeholder">
-        <div class="insta-icon">📸</div>
-        <div class="insta-label">View on Instagram</div>
+    <a class="social-card" href="https://www.instagram.com/p/C3HxH_qPhT0/" target="_blank">
+      <div class="social-thumb">
+        <img src="https://www.instagram.com/p/C3HxH_qPhT0/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Campaign Post"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-ph\' style=\'background:linear-gradient(135deg,#f9c74f,#f8961e,#f3722c,#e76f51)\'><div class=\'insta-ph-icon\'>📸</div><div class=\'insta-ph-label\'>View on Instagram</div></div>'"/>
+        <div class="social-overlay"><span>View Post ↗</span></div>
       </div>
       <div class="social-body">
         <div class="social-type">Instagram · Brand Content</div>
-        <div class="social-label-text">Campaign Post</div>
-        <div class="social-desc">Brand storytelling post crafted to align with campaign messaging — tone-consistent, visually guided, and audience-aware, developed as part of a sustained content calendar.</div>
+        <div class="social-label">Campaign Post</div>
+        <div class="social-desc">Brand storytelling crafted to align with campaign messaging — tone-consistent, visually guided, and audience-aware.</div>
       </div>
     </a>
 
-    <a class="social-card" href="https://www.instagram.com/reel/C3FNHA-Pebs/?igsh=Z2U5cWtuOGFrbnVx" target="_blank">
-      <div class="insta-placeholder" style="background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045)">
-        <div class="insta-icon">🎬</div>
-        <div class="insta-label">Influencer Reel</div>
+    <a class="social-card" href="https://www.instagram.com/reel/C3FNHA-Pebs/" target="_blank">
+      <div class="social-thumb">
+        <img src="https://www.instagram.com/p/C3FNHA-Pebs/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Influencer Reel"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-ph\' style=\'background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)\'><div class=\'insta-ph-icon\'>🎬</div><div class=\'insta-ph-label\'>Influencer Reel</div></div>'"/>
+        <div class="social-overlay"><span>View Reel ↗</span></div>
       </div>
       <div class="social-body">
         <div class="social-type">Instagram Reel · Influencer Marketing</div>
-        <div class="social-label-text">Influencer Campaign Reel</div>
-        <div class="social-desc">End-to-end influencer marketing — scouting creators, coordinating timelines, writing briefs, and scripting the reel to ensure brand alignment and authentic delivery.</div>
+        <div class="social-label">Influencer Campaign Reel</div>
+        <div class="social-desc">End-to-end influencer work — scouting, coordinating, brief-writing, and scripting to ensure brand alignment and authentic delivery.</div>
       </div>
     </a>
 
-    <a class="social-card" href="https://www.instagram.com/p/C3UGzXEPRfP/?igsh=MWFlZHowNXhqYzNrcg==" target="_blank">
-      <div class="insta-placeholder" style="background: linear-gradient(135deg, #f77f00, #d62828, #023e8a)">
-        <div class="insta-icon">✨</div>
-        <div class="insta-label">View on Instagram</div>
+    <a class="social-card" href="https://www.instagram.com/p/C3UGzXEPRfP/" target="_blank">
+      <div class="social-thumb">
+        <img src="https://www.instagram.com/p/C3UGzXEPRfP/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Engagement Post"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-ph\' style=\'background:linear-gradient(135deg,#f77f00,#d62828,#023e8a)\'><div class=\'insta-ph-icon\'>✨</div><div class=\'insta-ph-label\'>View on Instagram</div></div>'"/>
+        <div class="social-overlay"><span>View Post ↗</span></div>
       </div>
       <div class="social-body">
         <div class="social-type">Instagram · Brand Content</div>
-        <div class="social-label-text">Engagement Post</div>
-        <div class="social-desc">Strategically crafted post designed to maximize reach and engagement — paired copy with creative direction to drive interaction and brand recall.</div>
+        <div class="social-label">Engagement Post</div>
+        <div class="social-desc">Strategically crafted to maximise reach — copy paired with creative direction to drive interaction and brand recall.</div>
       </div>
     </a>
 
-    <a class="social-card" href="https://www.instagram.com/reel/C3sGc4ysbf0/?igsh=MTd4cG16eDNxNWZzNA==" target="_blank">
-      <div class="insta-placeholder" style="background: linear-gradient(135deg, #2d6a4f, #40916c, #74c69d)">
-        <div class="insta-icon">🎥</div>
-        <div class="insta-label">Scripted Reel</div>
+    <a class="social-card" href="https://www.instagram.com/reel/C3sGc4ysbf0/" target="_blank">
+      <div class="social-thumb">
+        <img src="https://www.instagram.com/p/C3sGc4ysbf0/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Scripted Reel"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-ph\' style=\'background:linear-gradient(135deg,#2d6a4f,#40916c,#74c69d)\'><div class=\'insta-ph-icon\'>🎥</div><div class=\'insta-ph-label\'>Scripted Reel</div></div>'"/>
+        <div class="social-overlay"><span>View Reel ↗</span></div>
       </div>
       <div class="social-body">
         <div class="social-type">Instagram Reel · Scripted</div>
-        <div class="social-label-text">Scripted Reel</div>
-        <div class="social-desc">Conceptualized and scripted this reel from the ground up — structured narrative, punchy hooks, and a clear CTA that fits the brand's conversational yet expert voice.</div>
+        <div class="social-label">Scripted Reel</div>
+        <div class="social-desc">Conceptualised and scripted from scratch — structured narrative, punchy hooks, and a clear CTA that fits the brand voice.</div>
       </div>
     </a>
 
-    <a class="social-card" href="https://www.instagram.com/p/C31l9fFS7Nx/?igsh=a280bm9ocW12YjVu" target="_blank">
-      <div class="insta-placeholder" style="background: linear-gradient(135deg, #03045e, #0077b6, #00b4d8)">
-        <div class="insta-icon">🌟</div>
-        <div class="insta-label">View on Instagram</div>
+    <a class="social-card" href="https://www.instagram.com/p/C31l9fFS7Nx/" target="_blank">
+      <div class="social-thumb">
+        <img src="https://www.instagram.com/p/C31l9fFS7Nx/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Campaign Visual"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'insta-ph\' style=\'background:linear-gradient(135deg,#03045e,#0077b6,#00b4d8)\'><div class=\'insta-ph-icon\'>🌟</div><div class=\'insta-ph-label\'>View on Instagram</div></div>'"/>
+        <div class="social-overlay"><span>View Post ↗</span></div>
       </div>
       <div class="social-body">
         <div class="social-type">Instagram · Campaign</div>
-        <div class="social-label-text">Campaign Visual Post</div>
-        <div class="social-desc">Part of a sustained campaign push — copy written to complement the visual, maintain brand consistency, and speak directly to the target audience's aspirations.</div>
+        <div class="social-label">Campaign Visual Post</div>
+        <div class="social-desc">Copy written to complement the visual and speak directly to the audience's aspirations as part of a sustained campaign push.</div>
       </div>
     </a>
 
@@ -415,33 +573,66 @@
     <h2 class="section-title">Events</h2>
     <div class="section-line"></div>
   </div>
-  <p class="events-intro">I've managed global conferences from content creation to stakeholder coordination — and led brand events from concept through execution. Here's a selection of events I've been part of shaping.</p>
+  <p class="events-intro">From global HR conferences to brand product launches — managing speaker coordination, content, stakeholder comms, and social amplification across continents.</p>
   <div class="events-grid">
+
     <a class="event-card" href="https://www.neeyamo.com/event/evolve-beyond-borders-2023-amsterdam" target="_blank">
-      <div class="event-location">Amsterdam · 2023</div>
-      <div class="event-name">Evolve: Beyond Borders</div>
-      <div class="event-desc">Managed speaker coordination, content strategy, and stakeholder communication for Neeyamo's flagship international HR conference — a key annual touchpoint for their global audience.</div>
+      <div class="event-thumb">
+        <img src="https://www.neeyamo.com/themes/custom/neeyamo/share-image.png" referrerpolicy="no-referrer" loading="lazy" alt="Amsterdam Event"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'event-thumb-ph\' style=\'background:linear-gradient(135deg,#0a2540,#ff6b35)\'>🇳🇱</div>'"/>
+      </div>
+      <div class="event-body">
+        <div class="event-location">🇳🇱 Amsterdam · 2023</div>
+        <div class="event-name">Evolve: Beyond Borders</div>
+        <div class="event-desc">Managed speaker coordination, content strategy, and stakeholder communication for Neeyamo's flagship international HR conference.</div>
+      </div>
     </a>
+
     <a class="event-card" href="https://www.neeyamo.com/event/evolve-beyond-borders-2023-london" target="_blank">
-      <div class="event-location">London · 2023</div>
-      <div class="event-name">Evolve: Beyond Borders</div>
-      <div class="event-desc">Led content and communications for the London leg of this global event series — coordinating cross-functional teams, managing PR, and ensuring on-brand messaging throughout.</div>
+      <div class="event-thumb">
+        <img src="https://www.neeyamo.com/themes/custom/neeyamo/share-image.png" referrerpolicy="no-referrer" loading="lazy" alt="London Event"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'event-thumb-ph\' style=\'background:linear-gradient(135deg,#003078,#cf142b)\'>🇬🇧</div>'"/>
+      </div>
+      <div class="event-body">
+        <div class="event-location">🇬🇧 London · 2023</div>
+        <div class="event-name">Evolve: Beyond Borders</div>
+        <div class="event-desc">Led content and communications for the London leg — coordinating cross-functional teams, managing PR, and ensuring on-brand messaging.</div>
+      </div>
     </a>
+
     <a class="event-card" href="https://www.neeyamo.com/event/evolve-beyond-borders-2023-atlanta" target="_blank">
-      <div class="event-location">Atlanta · 2023</div>
-      <div class="event-name">Evolve: Beyond Borders</div>
-      <div class="event-desc">Delivered end-to-end content and event communications for the Atlanta edition — reinforcing Neeyamo's thought leadership positioning across one of their largest North American markets.</div>
+      <div class="event-thumb">
+        <img src="https://www.neeyamo.com/themes/custom/neeyamo/share-image.png" referrerpolicy="no-referrer" loading="lazy" alt="Atlanta Event"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'event-thumb-ph\' style=\'background:linear-gradient(135deg,#002868,#BF0A30)\'>🇺🇸</div>'"/>
+      </div>
+      <div class="event-body">
+        <div class="event-location">🇺🇸 Atlanta · 2023</div>
+        <div class="event-name">Evolve: Beyond Borders</div>
+        <div class="event-desc">Delivered end-to-end content and event communications for Atlanta — reinforcing Neeyamo's thought leadership across North America.</div>
+      </div>
     </a>
+
   </div>
-  <div style="height: 1rem;"></div>
   <div class="events-social">
-    <a class="event-social-card" href="https://www.instagram.com/reel/C2NJkmnyYQK/?utm_source=ig_web_copy_link" target="_blank">
-      <div class="event-social-label">Event Reel — Scripted & Conceptualized ↗</div>
-      <div class="event-social-desc">Took this reel from idea to execution — conceptualizing the narrative arc, scripting the on-camera delivery, and shaping the visual flow to capture the energy of the event.</div>
+    <a class="event-s-card" href="https://www.instagram.com/reel/C2NJkmnyYQK/" target="_blank">
+      <div class="event-s-thumb">
+        <img src="https://www.instagram.com/p/C2NJkmnyYQK/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Event Reel"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'event-s-thumb-ph\' style=\'background:linear-gradient(135deg,#221e1b,#3a2e28)\'>🎬</div>'"/>
+      </div>
+      <div class="event-s-body">
+        <div class="event-s-label">Event Reel — Scripted & Conceptualised ↗</div>
+        <div class="event-s-desc">Took this reel from idea to execution — conceptualising the narrative arc, scripting on-camera delivery, and shaping the visual flow.</div>
+      </div>
     </a>
-    <a class="event-social-card" href="https://www.instagram.com/p/C3VFim6IJKH/?igsh=aGFuaGkycmh1a3Vt" target="_blank">
-      <div class="event-social-label">Event Campaign Post ↗</div>
-      <div class="event-social-desc">A campaign post developed to extend event reach on social — written to generate pre-event buzz and capture audience excitement with a strong, consistent brand voice.</div>
+    <a class="event-s-card" href="https://www.instagram.com/p/C3VFim6IJKH/" target="_blank">
+      <div class="event-s-thumb">
+        <img src="https://www.instagram.com/p/C3VFim6IJKH/media/?size=l" referrerpolicy="no-referrer" loading="lazy" alt="Event Post"
+             onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'event-s-thumb-ph\' style=\'background:linear-gradient(135deg,#221e1b,#3a2e28)\'>📸</div>'"/>
+      </div>
+      <div class="event-s-body">
+        <div class="event-s-label">Event Campaign Post ↗</div>
+        <div class="event-s-desc">Campaign post to extend event reach on social — written to generate buzz and capture excitement with a consistent brand voice.</div>
+      </div>
     </a>
   </div>
 </section>
@@ -454,7 +645,7 @@
     <div class="section-line"></div>
   </div>
   <div class="podcast-layout">
-    <div class="podcast-text">
+    <div>
       <div class="podcast-desc">
         <p>Investreks is Ashton Gray's exclusive podcast series — and I built it from zero. From branding and naming the show to scouting guests, writing episode scripts, and stepping in front of the mic as host, this was a full-scale production.</p>
         <p>Every episode was a strategic touchpoint — reinforcing Ashton Gray's positioning as a trusted voice in real estate investment while delivering genuine value to their investor community.</p>
@@ -466,34 +657,46 @@
         <div class="podcast-role">Host — On-Camera & On-Mic</div>
         <div class="podcast-role">Distribution & Promotion</div>
       </div>
-      <a class="podcast-link" href="https://www.youtube.com/watch?v=Mi9xaH3pM68" target="_blank">Watch on YouTube ↗</a>
+      <div class="podcast-btns">
+        <a class="btn-white" href="https://www.youtube.com/watch?v=Mi9xaH3pM68" target="_blank">Watch on YouTube ↗</a>
+        <a class="btn-white-outline" href="https://ashtongray.in/resources/?ucterms=category~podcasts" target="_blank">All Episodes ↗</a>
+      </div>
     </div>
     <div class="podcast-visual">
-      <a class="podcast-yt-thumb" href="https://www.youtube.com/watch?v=Mi9xaH3pM68" target="_blank">
-        <img src="https://img.youtube.com/vi/Mi9xaH3pM68/maxresdefault.jpg" alt="Investreks Podcast" style="width:100%;display:block;" onerror="this.src='https://img.youtube.com/vi/Mi9xaH3pM68/hqdefault.jpg'"/>
-        <div class="podcast-play-btn">
-          <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.5 7.7c-.8-2.9-3-5.2-5.9-6C55.8 0 34 0 34 0S12.2 0 7.4 1.7c-2.9.8-5.1 3.1-5.9 6C0 12.5 0 24 0 24s0 11.5 1.5 16.3c.8 2.9 3 5.2 5.9 6C12.2 48 34 48 34 48s21.8 0 26.6-1.7c2.9-.8 5.1-3.1 5.9-6C68 35.5 68 24 68 24S68 12.5 66.5 7.7z"/><path fill="#fff" d="M45 24L27 14v20z"/></svg>
+      <a class="yt-thumb" href="https://www.youtube.com/watch?v=Mi9xaH3pM68" target="_blank" rel="noopener noreferrer" onclick="window.open('https://www.youtube.com/watch?v=Mi9xaH3pM68','_blank');return false;">
+        <img src="https://i.ytimg.com/vi/Mi9xaH3pM68/hqdefault.jpg" referrerpolicy="no-referrer"
+             alt="Investreks Podcast on YouTube" style="pointer-events:none;"
+             onerror="this.onerror=function(){this.style.display='none';this.nextElementSibling.style.display='flex'};this.src='https://img.youtube.com/vi/Mi9xaH3pM68/maxresdefault.jpg'"/>
+        <div class="yt-fallback" style="pointer-events:none;">
+          <span class="yt-fallback-icon">🎙️</span>
+          <span class="yt-fallback-label">Investreks</span>
+          <span class="yt-fallback-sub">Watch on YouTube</span>
+        </div>
+        <div class="yt-play" style="pointer-events:none;">
+          <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M66.5 7.7c-.8-2.9-3-5.2-5.9-6C55.8 0 34 0 34 0S12.2 0 7.4 1.7c-2.9.8-5.1 3.1-5.9 6C0 12.5 0 24 0 24s0 11.5 1.5 16.3c.8 2.9 3 5.2 5.9 6C12.2 48 34 48 34 48s21.8 0 26.6-1.7c2.9-.8 5.1-3.1 5.9-6C68 35.5 68 24 68 24S68 12.5 66.5 7.7z"/>
+            <path fill="#fff" d="M45 24L27 14v20z"/>
+          </svg>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div>
     <div class="footer-name">Apoorva Akshitha</div>
     <div class="footer-desc">Content Marketer · Brand Strategist · Podcast Host<br>Hyderabad, India · Open to remote & global opportunities</div>
   </div>
-  <div class="footer-contact">
+  <div class="footer-right">
     <a class="footer-email" href="mailto:apoorvaa15@gmail.com">apoorvaa15@gmail.com</a>
     <div class="footer-phone">+91 77089 92956</div>
-    <a href="https://linkedin.com/in/apoorvaakshitha" target="_blank" style="color: var(--accent); font-size: 0.82rem; text-decoration: none; display: block; margin-top: 0.5rem;">linkedin.com/in/apoorvaakshitha ↗</a>
+    <a href="https://linkedin.com/in/apoorvaakshitha" target="_blank" style="color:var(--accent);font-size:0.82rem;text-decoration:none;display:block;margin-top:0.5rem;">LinkedIn ↗</a>
   </div>
 </footer>
 <div class="footer-bottom">
-  <span class="footer-bottom-text">© 2025 Apoorva Akshitha. All rights reserved.</span>
-  
+  <span>© 2025 Apoorva Akshitha. All rights reserved.</span>
+  <a href="https://drive.google.com/file/d/1WuUprWLUJNqsf0Dh6PLFHz5fh-S9orFL/view" target="_blank" style="color:#5a5250;font-size:0.72rem;text-decoration:none;letter-spacing:0.05em;">Download Resume ↓</a>
 </div>
 
 </body>
